@@ -4,4 +4,8 @@
 <h2><%= @article.title %></h2>
 <p><%= @article.content %></p>
 
-<%= link_to "Create New", article_path(@article)%>
+<%= link_to "Delete", article_path(@article), method: :delete, data: { confirm: "Are you sure?" } %>
+
+<%= link_to "Main Page", articles_path %>
+
+<%= link_to "Edit Article", edit_article_path %>

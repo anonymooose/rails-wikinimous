@@ -15,7 +15,7 @@ puts 'Creating new articles'
 10.times do
   article = Article.new(
   title: Faker::StarWars.character,
-  content: Faker::Lorem.paragraph(3)
+  content: Faker::Lorem.paragraph(30)
   )
   article.save
 end

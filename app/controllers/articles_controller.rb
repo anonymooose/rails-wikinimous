@@ -35,7 +35,7 @@ class ArticlesController < ApplicationController
   private
 
   def set_articles
-    @article = Artcile.find(params[:id])
+    @article = Article.find(params[:id])
   end
 
   def article_params
